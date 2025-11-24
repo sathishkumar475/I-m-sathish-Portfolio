@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Employee Productivity Tracker</title>
+    <meta content="React-based Employee Productivity Tracker with role-based dashboards and analytics."
+        name="description">
+    <meta content="React, Employee Productivity, Team Tracking, Role Based Access, Dashboard" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="service-details-page">
+
+    <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <div class="profile-img">
+            <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+            <h1 class="sitename">SATHISH KUMAR E</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <!-- <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li> -->
+                <!-- <li><a href="index.html"><i class="bi bi-person navicon"></i> About</a></li> -->
+                <!-- <li><a href="./index.html"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> -->
+                <li><a href="index.html#Home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+                <!-- <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li> -->
+                <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+
+                <ul>
+
+
+
+                    <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+
+                </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Project Details</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">Employee Productivity Tracker</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- Project Details Section -->
+        <section id="project-details" class="project-details">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Employee Productivity Tracker</h2>
+                    <p>A React-based web application for tracking employee activities, team productivity, and
+                        performance with
+                        role-based access control.</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    <!-- Left Info -->
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Employee Productivity & Performance Tracking</li>
+                                <li><strong>Technology</strong>: React , React Router , Context API, Axios,
+                                    date-fns, Custom CSS</li>
+                                <li><strong>Project Date</strong>: November 2025</li>
+                                <li><strong>Project Type</strong>: Frontend-focused with mock API integration</li>
+                                </li>
+                                <li><strong>GitHub</strong>: <a
+                                        href="https://github.com/sathishkumar475/EMPOLYEE-PRODUCTIVITY-TRACKER/tree/main/employee-productivity-app"
+                                        target="_blank"> Viwe Source Code </a></li>
+                                <li><strong>PPT</strong>: <a
+                                        href="https://docs.google.com/presentation/d/10KaWzLmCVuzKKKRuALQApItoNEi2WugW/edit?usp=drive_link&ouid=110776834662017425800&rtpof=true&sd=true"
+                                        target="_blank">Viwe project PPT</a>
+
+                            </ul>
+
+                            <!-- You can update this link to your actual deployed URL -->
+                            <a href="#" class="btn btn-primary w-100 mt-3">View Project</a>
+                        </div>
+
+                        <div class="portfolio-info mt-4">
+                            <h3>Team & Roles</h3>
+                            <ul>
+                                <li><strong>Admin</strong>: System-wide control and reporting</li>
+                                <li><strong>Manager</strong>: Team performance & monthly analytics</li>
+                                <li><strong>Team Leader (TL)</strong>: Activity verification & team reports</li>
+                                <li><strong>User</strong>: Daily activity logging & self-tracking</li>
+                            </ul>
+                        </div>
+                        <!-- <table class="table table-bordered table-striped mt-4">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Employee Code</th>
+                                    <th>Team</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HLADMIN</td>
+                                    <td>NO NEED</td>
+                                    <td>administratorhl</td>
+                                </tr>
+                                <tr>
+                                    <td>TLB001</td>
+                                    <td>SOUTH1</td>
+                                    <td>Rajanl123</td>
+                                </tr>
+                                <tr>
+                                    <td>TLU001</td>
+                                    <td>PAYMENT</td>
+                                    <td>uday123</td>
+                                </tr>
+                                <tr>
+                                    <td>MNG001</td>
+                                    <td>SOUTH1</td>
+                                    <td>manager123</td>
+                                </tr>
+                                <tr>
+                                    <td>EMP101</td>
+                                    <td>SOUTH1</td>
+                                    <td>sathish123</td>
+                                </tr>
+                                <tr>
+                                    <td>EMP102</td>
+                                    <td>SOUTH2</td>
+                                    <td>guna123</td>
+                                </tr>
+                                <tr>
+                                    <td>EMP103</td>
+                                    <td>PAYMENT</td>
+                                    <td>barath123</td>
+                                </tr>
+                                <tr>
+                                    <td>EMP104</td>
+                                    <td>PAYMENT</td>
+                                    <td>hari123</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+
+                    </div>
+
+
+                    <!-- Right Content -->
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/servicesss.jpg" alt="" class="img-fluid servicesss-img">
+                        <!-- Login Details Card -->
+                        <div class="card shadow-lg border-0 mt-4" style="border-radius: 12px;" data-aos="fade-up">
+                            <div class="card-header bg-primary text-white text-center"
+                                style="border-radius: 12px 12px 0 0;">
+                                <h4 class="mb-0"><i class="bi bi-person-circle me-2"></i> protection password
+                                </h4>
+                            </div>
+
+                            <div class="card-body p-4">
+
+                                <p class="text-muted mb-3">
+                                    Use the following admin credentials to explore the Employee Productivity Tracker
+                                    dashboard.
+                                    Other user credentials (TL, Manager, Employees) are intentionally hidden for
+                                    security.
+                                </p>
+
+                                <table class="table table-bordered table-striped mt-4">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Employee Code</th>
+                                            <th>Team</th>
+                                            <th>Password</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>HLADMIN</td>
+                                            <td>NO NEED</td>
+                                            <td>administratorhl</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TLB001</td>
+                                            <td>SOUTH1</td>
+                                            <td>Rajanl123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TLU001</td>
+                                            <td>PAYMENT</td>
+                                            <td>uday123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MNG001</td>
+                                            <td>SOUTH1</td>
+                                            <td>manager123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EMP101</td>
+                                            <td>SOUTH1</td>
+                                            <td>sathish123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EMP102</td>
+                                            <td>SOUTH2</td>
+                                            <td>guna123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EMP103</td>
+                                            <td>PAYMENT</td>
+                                            <td>barath123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EMP104</td>
+                                            <td>PAYMENT</td>
+                                            <td>hari123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <div class="text-center mt-4">
+                                    <a href="#" class="btn btn-primary px-4 py-2" style="border-radius: 8px;">
+                                        <i class="bi bi-box-arrow-in-right me-2"></i>Go to project_image
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="portfolio-description mt-4">
+
+                            <h4>💡 Project Overview</h4>
+                            <p>
+                                The <strong>Employee Productivity Tracker</strong> is a comprehensive React web
+                                application designed to
+                                track <strong>daily employee activities, team productivity, and performance
+                                    metrics</strong> inside an
+                                organization.
+                                It supports <strong>role-based access</strong> so that Admins, Managers, Team Leaders,
+                                and Users each
+                                see dashboards and features relevant to their responsibilities.
+                            </p>
+                            <p>
+                                Employees log their daily work in the form of activities with predefined point values.
+                                Team Leaders
+                                verify these activities,
+                                and the system generates <strong>daily and monthly reports, rankings, and
+                                    statistics</strong> for both
+                                employees and teams.
+                            </p>
+
+                            <h4>📋 Core Features</h4>
+                            <ul>
+                                <li>
+                                    <strong>Activity Management (CRUD)</strong><br>
+                                    Users can create, view, update, and delete their daily activities with point values.
+                                    Predefined
+                                    activity types include:
+                                    <em>Encore, Call Resolution, Customer Support, Process Improvement, Training,
+                                        Quality Check</em>.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Team Management</strong><br>
+                                    Supports <strong>10 department teams</strong>: SOUTH1, SOUTH2, PAYMENT, TRANCH,
+                                    CKYC, NORTH, EAST,
+                                    WEST, REPAYMENT, WALT.
+                                    Activities and points are aggregated per team with <strong>daily and monthly
+                                        performance reports</strong>.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Role-Based Dashboards</strong><br>
+                                    Different roles see different views:
+                                    <ul>
+                                        <li><strong>Admin</strong>: System-wide overview, rankings, and user management
+                                        </li>
+                                        <li><strong>Manager</strong>: Monthly team and employee rankings with
+                                            performance analytics</li>
+                                        <li><strong>Team Leader (TL)</strong>: Activity verification and daily team
+                                            reports</li>
+                                        <li><strong>User</strong>: Personal activity history and points tracking</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Reporting & Analytics</strong><br>
+                                    Daily and monthly reports, team and employee rankings, medals (🥇🥈🥉) for top
+                                    performers,
+                                    average points per activity, and trend statistics.
+                                </li>
+                                <li class="mt-2">
+                                    <strong>Verification Workflow</strong><br>
+                                    Users submit activities → TL verifies → Verified activities contribute to
+                                    <strong>final rankings and reports</strong>.
+                                </li>
+                            </ul>
+
+                            <h4>📊 Activity Points Configuration</h4>
+                            <p>The system uses default points per activity to standardize performance measurement:</p>
+                            <ul>
+                                <li><strong>Encore</strong> – 2 points</li>
+                                <li><strong>Call Resolution</strong> – 3 points</li>
+                                <li><strong>Customer Support</strong> – 1 point</li>
+                                <li><strong>Process Improvement</strong> – 5 points</li>
+                                <li><strong>Training</strong> – 4 points</li>
+                                <li><strong>Quality Check</strong> – 2 points</li>
+                            </ul>
+
+                            <h4>🧱 Project Structure & Tech Stack</h4>
+                            <p>
+                                The application is structured as a typical React SPA with clean separation of
+                                <strong>components,
+                                    pages, context, services, and styles</strong>.
+                            </p>
+                            <ul>
+                                <li><strong>Frontend</strong>: React 18, functional components</li>
+                                <li><strong>Routing</strong>: React Router v6 for multi-role dashboards</li>
+                                <li><strong>State Management</strong>: React Context API for authentication and
+                                    role-based access</li>
+                                <li><strong>HTTP Client</strong>: Axios with a central <code>api.js</code> service layer
+                                </li>
+                                <li><strong>Date Handling</strong>: date-fns for formatting and monthly navigation</li>
+                                <li><strong>Styling</strong>: Custom responsive CSS modules for dashboards and reports
+                                </li>
+                            </ul>
+
+                            <h4>🧠 My Role</h4>
+                            <p>
+                                I worked as a <strong>frontend developer</strong> (with basic mock backend integration),
+                                responsible
+                                for:
+                            </p>
+                            <ul>
+                                <li>Designing the overall UI/UX for all role-based dashboards (Admin, Manager, TL, User)
+                                </li>
+                                <li>Implementing activity management (CRUD) and verification workflow UI</li>
+                                <li>Creating reporting screens for daily/monthly reports and rankings</li>
+                                <li>Configuring React Context for authentication and role-based access control</li>
+                                <li>Integrating mock API services via <code>api.js</code> to simulate real backend
+                                    behavior</li>
+                                <li>Ensuring responsive design and clean component structure for future backend
+                                    integration</li>
+                            </ul>
+
+                            <h4>🚀 Features Roadmap</h4>
+                            <p>
+                                The project is designed to be extended with real backend and advanced enterprise
+                                features:
+                            </p>
+                            <ul>
+                                <li>Node.js/Express backend integration with MongoDB/PostgreSQL</li>
+                                <li>Authentication using JWT/OAuth</li>
+                                <li>Email and real-time notifications</li>
+                                <li>Export reports to PDF/Excel</li>
+                                <li>Interactive performance charts and graphs</li>
+                                <li>Advanced filtering, search, and pagination</li>
+                                <li>Future mobile app version</li>
+                            </ul>
+
+
+                            <h4>🌟 Achievements</h4>
+                            <ul>
+                                <li>Designed and implemented a multi-role productivity tracking system end-to-end using
+                                    React.</li>
+                                <li>Created reusable components for reports, rankings, and activity management to
+                                    improve scalability.</li>
+                                <li>Structured the project to make future backend and database integration
+                                    straightforward.</li>
+                            </ul>
+
+                            <h4>🧪 Test Credentials (Demo)</h4>
+                            <p>For demo/testing, the application supports multiple default users with different roles:
+                            </p>
+                            <ul>
+                                <li><strong>Admin User</strong> – <code>admin@company.com</code> (Admin, Team: SOUTH1)
+                                </li>
+                                <li><strong>TL Banul</strong> – <code>banul@company.com</code> (Team Leader, Team:
+                                    SOUTH1)</li>
+                                <li><strong>Manager</strong> – <code>manager@company.com</code> (Manager, Team: SOUTH1)
+                                </li>
+                                <li><strong>John Doe</strong> – <code>john@company.com</code> (User, Team: SOUTH1)</li>
+                                <li><strong>Jane Smith</strong> – <code>jane@company.com</code> (User, Team: SOUTH2)
+                                </li>
+                                <li><strong>Mike Johnson</strong> – <code>mike@company.com</code> (User, Team: PAYMENT)
+                                </li>
+                            </ul>
+
+                            <p class="mt-3">
+                                <em>Version:</em> 1.0.0 &nbsp; | &nbsp; <em>Last Updated:</em> November 2025
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Project Details Section -->
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="copyright text-center">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">Sathish</strong> <span>All Rights
+                        Reserved</span></p>
+            </div>
+            <div class="credits">
+                Designed by <a href="#">I'm Sathish</a> Distributed by
+                <a href="#">sathsoftware</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

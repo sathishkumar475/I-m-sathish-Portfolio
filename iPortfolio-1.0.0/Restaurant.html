@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sathish FoodPark — Restaurant Billing System</title>
+    <meta
+        content="Single-page restaurant billing app with menu management, QR payment, cart billing and monthly sales reporting."
+        name="description">
+    <meta content="Restaurant, Billing, POS, QR Payment, LocalStorage, JavaScript" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        /* small inline helpers for preview */
+        .sitename {
+            font-weight: 700;
+        }
+
+        .project-hero {
+            padding: 2rem 0;
+        }
+
+        .features-list li {
+            margin-bottom: 0.6rem;
+        }
+
+        .code-key {
+            font-family: monospace;
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="service-details-page">
+
+    <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <div class="profile-img">
+            <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+            <h1 class="sitename">SATHISH KUMAR E</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="index.html#Home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+                <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+                <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Project Details</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">Sathish FoodPark Restaurant. Billing System</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- Project Details Section -->
+        <section id="project-details" class="project-details">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Sathish FoodPark — Restaurant Billing System</h2>
+                    <p>A modern, single-page restaurant billing application with menu management, quick billing,
+                        QR payment and monthly sales reporting — fully client-side using localStorage.</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    <!-- Left Info -->
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+                            <h3>Project Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Point-of-Sale / Billing</li>
+                                <li><strong>Technology</strong>: Vanilla HTML, CSS, JavaScript (ES6 modules)</li>
+                                <li><strong>Project Date</strong>: November 2025</li>
+                                <li><strong>Project Type</strong>: Client-side SPA (no backend)</li>
+                                <li><strong>GitHub</strong>: <a
+                                        href="https://github.com/sathishkumar475/Restaurant-Billing-System"
+                                        target="_blank">Viwe source code</a></li>
+                                <li><strong>PPT</strong>: <a
+                                        href="https://docs.google.com/presentation/d/1eRyVH2_aXwcswXvEE8QN5LFfFYwTPiDO/edit?usp=sharing&ouid=110776834662017425800&rtpof=true&sd=true">View
+                                        Project_PPT</a></li>
+                            </ul>
+                            <a href="https://sathishfoodpark.netlify.app/" class="btn btn-primary w-100 mt-3">Visit
+                                Project</a>
+                        </div>
+
+                        <div class="portfolio-info mt-4">
+                            <h3>Quick Notes</h3>
+                            <ul>
+                                <li>Default menu: Idly, Dosa, Vada, Tea, Coffee, Poori (preloaded on first run)</li>
+                                <li>All data persists in <span class="code-key">localStorage</span> — no server required
+                                </li>
+                                <li>Ideal for small restaurants or demo purposes</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Right Content -->
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/img/servicessss.jpg" alt="SpiceGarden UI" class="img-fluid servicessss-img">
+                        <br>
+
+
+
+                        <br>
+                        <div class="portfolio-description mt-4">
+
+                            <h4>💡 Overview</h4>
+                            <p>
+                                <strong>SpiceGarden</strong> is a lightweight, browser-based billing system built for
+                                speed and simplicity. It allows staff to add menu items to a cart with a single click,
+                                manage menu items, accept payments via QR confirmation, print bills, and view monthly
+                                sales reports — everything stored locally.
+                            </p>
+
+                            <h4>📋 Core Features</h4>
+                            <ul class="features-list">
+                                <li><strong>Menu Management</strong> — Add, edit and delete menu items (with image URL).
+                                </li>
+                                <li><strong>Quick Billing</strong> — Click menu cards to add items; repeated clicks
+                                    increment quantity.</li>
+                                <li><strong>Cart Operations</strong> — Increase/decrease quantity, remove items, or
+                                    clear cart.</li>
+                                <li><strong>QR Payment Flow</strong> — "Pay Now" shows QR code; confirm payment to
+                                    finalize order.</li>
+                                <li><strong>Bill Printing</strong> — Print-optimized receipt view for thermal/standard
+                                    printers.</li>
+                                <li><strong>Monthly Sales Report</strong> — Revenue, orders, average ticket size and
+                                    transaction history by month.</li>
+                                <li><strong>Search</strong> — Quick search to find menu items by name or category.</li>
+                                <li><strong>LocalStorage</strong> — Persistent storage with export/backup-friendly keys.
+                                </li>
+                            </ul>
+
+                            <h4>🚀 Getting Started</h4>
+                            <ol>
+                                <li>Open <code>index.html</code> in a modern browser (supports ES6 modules).</li>
+                                <li>App initializes with default menu items when run first time.</li>
+                                <li>Start adding items to the cart and use "Pay Now" to simulate a completed sale.</li>
+                            </ol>
+
+                            <h4>🗂️ Data & Storage Keys</h4>
+                            <p>All data is saved in <code>localStorage</code> using these keys:</p>
+                            <ul>
+                                <li><span class="code-key">sg_menu_v1</span> — menu items array</li>
+                                <li><span class="code-key">sg_cart_v1</span> — current cart state</li>
+                                <li><span class="code-key">sg_sales_v1</span> — completed sales / transactions</li>
+                            </ul>
+
+                            <h4>🧾 Payment Flow & Printing</h4>
+                            <p>
+                                Click <em>Pay Now</em> to open a QR modal. After confirming payment the sale is saved to
+                                <code>sg_sales_v1</code>, the bill is printed (print dialog) and cart is cleared.
+                            </p>
+
+                            <h4>🛠️ Tech Details</h4>
+                            <ul>
+                                <li>Single-page app using ES6 modules and modern browser APIs</li>
+                                <li>No backend — suitable for offline or demo use</li>
+                                <li>Print media queries optimized for receipt printing</li>
+                                <li>Simple design so it can be integrated into a kiosk or PWA later</li>
+                            </ul>
+
+                            <h4>📌 Notes & Recommendations</h4>
+                            <ul>
+                                <li>Data is local — clearing browser storage will reset the app.</li>
+                                <li>For production use, back up <span class="code-key">sg_sales_v1</span> regularly or
+                                    add a server.</li>
+                                <li>Consider integrating a real payment gateway for live transactions.</li>
+                            </ul>
+
+                            <p class="mt-3"><em>Version:</em> 1.0.0 &nbsp; | &nbsp; <em>Last Updated:</em> November 2025
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Project Details Section -->
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="copyright text-center">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">SpiceGarden</strong> <span>All Rights
+                        Reserved</span></p>
+            </div>
+            <div class="credits">
+                Designed by <a href="#">Sathish</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
